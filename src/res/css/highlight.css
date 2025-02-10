@@ -1,0 +1,5 @@
+.highlight {
+    background-color: yellow;
+    color: black;
+    transition: background-color 0.3s ease;
+}
