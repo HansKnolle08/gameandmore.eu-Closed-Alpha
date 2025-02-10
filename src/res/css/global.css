@@ -38,13 +38,6 @@ nav ul li a.active {
     background-color: #444;
     font-weight: bold;
 }
-.extLink {
-    text-decoration: none;
-    color: red;
-}
-.extLink:hover {
-    text-decoration: underline;
-}
 main {
     padding: 40px;
     max-width: 800px;
