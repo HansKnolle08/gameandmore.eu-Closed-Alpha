@@ -1,0 +1,49 @@
+.search-input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #007BFF;
+    border-radius: 25px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+.search-input:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+@keyframes placeholderAnimation {
+    0% { content: "🔍 Suchbegriff eingeben..."; }
+    33% { content: "🔍 Suche nach 'Homebrew'..."; }
+    66% { content: "🔍 Suche nach 'Modchip'..."; }
+    100% { content: "🔍 Suchbegriff eingeben..."; }
+}
+.search-input::placeholder {
+    animation: changePlaceholder 6s infinite;
+}
+@keyframes changePlaceholder {
+    0% { opacity: 1; }
+    25% { opacity: 0; }
+    50% { content: "🔍 Suche nach 'Homebrew'..."; opacity: 1; }
+    75% { opacity: 0; }
+    100% { content: "🔍 Suchbegriff eingeben..."; opacity: 1; }
+}
+.search-button {
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2);
+}
+.search-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 10px rgba(0, 123, 255, 0.4);
+}
+.search-button:active {
+    background-color: #00408a;
+    transform: scale(0.95);
+}
