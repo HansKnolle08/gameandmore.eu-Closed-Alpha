@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-=======
-// src/res/javascript/index.js
-// Main Javascript File
-
->>>>>>> 5e6896d (Fixed a major problem with git and github)
 document.addEventListener("DOMContentLoaded", function() {
     const navLinks = document.querySelectorAll("nav ul li a");
     const sections = document.querySelectorAll("section");
@@ -21,6 +15,5 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     }
-    
     window.addEventListener("scroll", highlightSection);
 });
