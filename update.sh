@@ -16,14 +16,17 @@ git clone "$repo_url" "$temp_dir/gameandmore.eu"
 rm -rf "$target_dir"
 mkdir -p "$target_dir"
 
-# Dateien und Ordner verschieben
+# Dateien und Ordner aus src verschieben
 mv "$temp_dir/gameandmore.eu/LICENSE" "$target_dir/"
-mv "$temp_dir/gameandmore.eu/index.html" "$target_dir/"
-mv "$temp_dir/gameandmore.eu/res" "$target_dir/"
+mv "$temp_dir/gameandmore.eu/src/index.html" "$target_dir/"
+mv "$temp_dir/gameandmore.eu/src/res" "$target_dir/"
 
 # Berechtigungen setzen
 chown -R www-data:www-data "$target_dir"
 chmod -R 755 "$target_dir"
+
+# Skript selbst nach / kopieren
+cp "$0" /
 
 # Cleanup
 echo "Deployment abgeschlossen."
