@@ -15,7 +15,7 @@ function searchTerm() {
 
                 setTimeout(() => {
                     sectionTitleElement.classList.remove('highlight');
-                }, 1000);
+                }, 5000);
                 break;
             }
         }

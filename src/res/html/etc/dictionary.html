@@ -47,7 +47,6 @@
                Homebrew-Software kann viele verschiedene Zwecke haben, darunter Emulatoren, Medienplayer, Backup-Manager und modifizierte Spiele.</p>
             <p><strong>Beispiel:</strong> Ein Homebrew-Emulator ermöglicht es, ältere Spiele auf einer modernen Konsole zu spielen.</p>
         </section>
-        
         <section id="jailbreak">
             <h3>Jailbreak</h3>
             <p>Ein Jailbreak ist der Prozess, bei dem Sicherheitsmechanismen einer Konsole umgangen werden, um nicht offiziell signierte Software auszuführen. 
@@ -55,7 +54,6 @@
             <p><strong>Risiken:</strong> Ein Jailbreak kann Garantieverlust bedeuten, Updates können das Gerät sperren, und unsachgemäße Modifikationen können zu einem Brick führen.</p>
             <p><strong>Nutzen:</strong> Ermöglicht die Installation von Homebrew, Emulatoren, benutzerdefinierten Themes und manchmal auch das Abspielen von Backups.</p>
         </section>
-        
         <section id="custom-firmware">
             <h3>Custom Firmware (CFW)</h3>
             <p>Custom Firmware (CFW) ist eine modifizierte Version der Original-Firmware einer Konsole, die zusätzliche Funktionen und Freiheiten bietet.
@@ -69,7 +67,6 @@
             </ul>
             <p><strong>Unterschied zu einem Jailbreak:</strong> Ein Jailbreak ist oft der erste Schritt, um eine Custom Firmware zu installieren.</p>
         </section>
-        
         <section id="modchip">
             <h3>Modchip</h3>
             <p>Ein Modchip ist eine physische Hardware-Komponente, die in eine Konsole eingebaut wird, um sie zu modifizieren. 
@@ -87,7 +84,6 @@
             </ul>
             <p><strong>Risiken:</strong> Beim Einlöten eines Modchips kann die Konsole beschädigt werden, und einige Hersteller sperren modifizierte Konsolen online.</p>
         </section>
-        
         <section id="brick">
             <h3>Brick</h3>
             <p>Ein "Brick" (engl. für "Ziegelstein") beschreibt eine Konsole, die durch eine fehlerhafte Modifikation oder ein fehlgeschlagenes Firmware-Update unbrauchbar geworden ist.</p>
@@ -108,7 +104,110 @@
                 <li>Nur vertrauenswürdige Software von verlässlichen Quellen verwenden.</li>
                 <li>Niemals System-Updates durchführen, wenn eine Custom Firmware aktiv ist (ohne vorherige Prüfung der Kompatibilität).</li>
             </ul>
-        </section>        
+        </section> 
+        <section id="exploit">
+            <h3>Exploit</h3>
+            <p>Ein Exploit ist eine Schwachstelle in der Software oder Hardware einer Konsole, die genutzt werden kann, um nicht autorisierten Code auszuführen. 
+               Exploits sind oft der erste Schritt zum Jailbreak oder zur Installation von Custom Firmware.</p>
+            <p><strong>Beispiele für bekannte Exploits:</strong></p>
+            <ul>
+                <li><strong>FreakyHax</strong> (Nintendo 3DS - nutzt einen Fehler in Freakyforms Deluxe)</li>
+                <li><strong>Fusée Gelée</strong> (Nintendo Switch - nutzt eine Sicherheitslücke im Boot-ROM)</li>
+                <li><strong>PS4 Kernel Exploits</strong> (PlayStation 4 - verschiedene Exploits je nach Firmware-Version)</li>
+            </ul>
+            <p><strong>Risiken:</strong> Einige Exploits können durch Updates des Herstellers geschlossen werden.</p>
+        </section>
+        <section id="payload">
+            <h3>Payload</h3>
+            <p>Ein Payload ist eine kleine Software-Datei, die über einen Exploit oder einen speziellen Bootloader auf einer Konsole ausgeführt wird.
+               Payloads enthalten oft Anweisungen, um eine Custom Firmware zu starten oder Systembeschränkungen zu umgehen.</p>
+            <p><strong>Beispiele für Payloads:</strong></p>
+            <ul>
+                <li><strong>Hekate</strong> (Nintendo Switch - Multi-Tool für NAND-Backups, Bootloader etc.)</li>
+                <li><strong>Fusee Primary</strong> (Nintendo Switch - Startet Atmosphère CFW)</li>
+            </ul>
+        </section>
+        <section id="nand">
+            <h3>NAND</h3>
+            <p>Der NAND-Speicher ist der interne Speicher einer Konsole, in dem wichtige Systemdaten und die Firmware gespeichert sind.
+               Modder erstellen oft ein vollständiges NAND-Backup, bevor sie eine Custom Firmware installieren, um eine Wiederherstellung im Falle eines Bricks zu ermöglichen.</p>
+            <p><strong>Wichtige Begriffe im Zusammenhang mit NAND:</strong></p>
+            <ul>
+                <li><strong>NAND-Dump:</strong> Eine exakte Kopie des internen Speichers der Konsole.</li>
+                <li><strong>EmuNAND:</strong> Eine emulierte Version des NANDs, die von einer SD-Karte ausgeführt wird, um das echte System zu schützen.</li>
+            </ul>
+        </section>
+        <section id="rgh">
+            <h3>Reset Glitch Hack (RGH)</h3>
+            <p>RGH ist eine Methode, um die Xbox 360 zu modifizieren, indem gezielt Glitches im Boot-Prozess genutzt werden, um nicht signierten Code auszuführen.</p>
+            <p><strong>Vorteile:</strong></p>
+            <ul>
+                <li>Ermöglicht das Starten von Homebrew und Custom Firmware.</li>
+                <li>Kann auf fast allen Xbox 360-Modellen durchgeführt werden.</li>
+            </ul>
+            <p><strong>Nachteile:</strong></p>
+            <ul>
+                <li>Aufwendige Hardware-Modifikation erforderlich.</li>
+                <li>Die Bootzeit kann je nach Konsole variieren.</li>
+            </ul>
+        </section>
+        <section id="softmod">
+            <h3>Softmod</h3>
+            <p>Ein Softmod ist eine Modifikation, die ausschließlich über Software durchgeführt wird, ohne dass physische Hardware geändert werden muss.
+               Softmods nutzen oft Exploits oder Sicherheitslücken im Betriebssystem der Konsole.</p>
+            <p><strong>Beispiele für bekannte Softmods:</strong></p>
+            <ul>
+                <li><strong>LetterBomb</strong> (Nintendo Wii - nutzt eine Sicherheitslücke in der Nachrichten-App)</li>
+                <li><strong>Haxchi</strong> (Nintendo Wii U - nutzt eine Virtual Console-Anwendung für den Exploit)</li>
+                <li><strong>Frogminer</strong> (Nintendo 3DS - nutzt einen DS-Download-Spiel-Exploit)</li>
+            </ul>
+        </section>
+        <section id="hardmod">
+            <h3>Hardmod</h3>
+            <p>Ein Hardmod ist eine Modifikation, die physische Änderungen an der Hardware einer Konsole erfordert, z. B. das Einlöten eines Modchips oder das direkte Auslesen des NAND-Speichers.</p>
+            <p><strong>Beispiele für Hardmods:</strong></p>
+            <ul>
+                <li><strong>Modchips für die PS2</strong> - Ermöglichen das Abspielen von importierten oder Sicherheitskopien von Spielen.</li>
+                <li><strong>HWFLY für die Switch</strong> - Ermöglicht die automatische Ausführung von Payloads beim Einschalten.</li>
+            </ul>
+        </section>
+        <section id="emulator">
+            <h3>Emulator</h3>
+            <p>Ein Emulator ist eine Software, die eine andere Hardware-Umgebung simuliert, sodass Konsolenspiele auf einem PC oder einer anderen Konsole ausgeführt werden können.</p>
+            <p><strong>Beispiele für Emulatoren:</strong></p>
+            <ul>
+                <li><strong>Dolphin</strong> - Ein GameCube- und Wii-Emulator für PC.</li>
+                <li><strong>Citra</strong> - Ein Nintendo 3DS-Emulator.</li>
+                <li><strong>PCSX2</strong> - Ein PlayStation 2-Emulator.</li>
+            </ul>
+        </section>
+        <section id="bios">
+            <h3>BIOS</h3>
+            <p>Das BIOS (Basic Input/Output System) ist eine Firmware, die als grundlegende Steuerung für eine Konsole dient und beim Starten der Hardware geladen wird.</p>
+            <p><strong>Wichtige Informationen zum BIOS:</strong></p>
+            <ul>
+                <li>Viele Emulatoren benötigen die originale BIOS-Datei, um korrekt zu funktionieren.</li>
+                <li>Das Flashen eines falschen BIOS kann zu einem Brick führen.</li>
+            </ul>
+        </section>
+        <section id="sysnand">
+            <h3>SysNAND</h3>
+            <p>SysNAND ist der echte, interne NAND-Speicher der Konsole, auf dem das offizielle Betriebssystem läuft.</p>
+            <p><strong>Unterschied zwischen SysNAND und EmuNAND:</strong></p>
+            <ul>
+                <li><strong>SysNAND:</strong> Das echte System der Konsole.</li>
+                <li><strong>EmuNAND:</strong> Eine virtuelle Kopie von SysNAND, die auf einer SD-Karte gespeichert wird.</li>
+            </ul>
+        </section>
+        <section id="emunand">
+            <h3>EmuNAND</h3>
+            <p>EmuNAND ist eine emulierte Version des NAND-Speichers einer Konsole, die von einer SD-Karte oder einem externen Speicher ausgeführt wird.</p>
+            <p><strong>Vorteile von EmuNAND:</strong></p>
+            <ul>
+                <li>Ermöglicht die Nutzung von Homebrew ohne Risiko für das echte System.</li>
+                <li>Updates können auf EmuNAND getestet werden, bevor sie auf SysNAND angewendet werden.</li>
+            </ul>
+        </section>               
     </main>
     <footer>
         <p>&copy; 2025 gameandmore.eu - Alle Rechte vorbehalten</p>
