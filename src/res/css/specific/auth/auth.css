@@ -1,0 +1,65 @@
+/* src/res/css/specific/auth/login.css */
+/* CSS-Sheet for Login Page */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+form input {
+    padding: 10px;
+    background-color: #333;
+    color: #ffffff;
+    border: 1px solid #444;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+form input:focus {
+    border-color: #666;
+}
+
+form button {
+    padding: 10px;
+    background-color: #444;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+form p {
+    color: #ffffff;
+    text-align: center;
+}
+
+form a {
+    color: #00bfff;
+    text-decoration: none;
+}
+
+form a:hover {
+    text-decoration: underline;
+}
