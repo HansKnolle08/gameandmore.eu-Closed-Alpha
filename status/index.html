@@ -12,8 +12,14 @@
     <script src="/res/javascript/global/index.js"></script>
     <title>gameandmore.eu - Status</title>
 <style>
- .test{
+ .funktioniert{
+    background-color: rgb(3, 65, 3);
+}
+ .kleinerausfall{
     background-color: rgb(175, 175, 43);
+ }
+ .kompletterausfall{
+    background-color: rgb(84, 3, 3);
  }
 </style>
 </head>
@@ -30,21 +36,24 @@
             <p>Du wolltest nicht hierher? Hier geht es zurück zur <a class="extLink" href="/index.html">Homepage</a>.</p>
         </section>
         
-        <section class="test">
+        <section class="kleinerausfall">
             <h2>Manche Services laufen wegen Wartungsarbeiten nicht</h2>
         </section>
 
         <section>
             <h2>Server: www.gameandmore.eu</h2>
             <p>Status: Erreichbar</p>
+            <p class="funktioniert">Service funktioniert einwandfrei</p>
         </section>
         <section>
             <h2>Server: forum.gameandmore.eu</h2>
-            <p>Status: Erreichbar</p>
+            <p>Status: Nicht erreichbar</p>
+            <p class="kompletterausfall">Das Forum ist noch nicht fertig entwickelt</p>
         </section>
         <section>
             <h2>Server: backup.gameandmore.eu</h2>
             <p>Status: Erreichbar</p>
+            <p class="funktioniert">Service funktioniert einwandfrei</p>
         </section>
     </main>
 </body>
