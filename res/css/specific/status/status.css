@@ -1,0 +1,12 @@
+/* /res/css/specific/status/status.css */
+/* Design for Server Status */
+
+.working{
+    background-color: rgb(3, 65, 3);
+}
+.small_problem{
+    background-color: rgb(175, 175, 43);
+}
+.fatal_problem{
+    background-color: rgb(84, 3, 3);
+}

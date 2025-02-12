@@ -1,3 +1,5 @@
+// /res/javascript/global/index.js
+
 document.addEventListener("DOMContentLoaded", function() {
     const navLinks = document.querySelectorAll("nav ul li a");
     const sections = document.querySelectorAll("section");

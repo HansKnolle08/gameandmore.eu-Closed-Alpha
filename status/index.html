@@ -1,4 +1,4 @@
-<!-- status/index.html -->
+<!-- /status/index.html -->
 <!-- Status-Seite -->
 
 <!DOCTYPE html>
@@ -8,52 +8,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/res/css/global/global.css">
     <link rel="stylesheet" href="/res/css/global/extLink.css">
+    <link rel="stylesheet" href="/res/css/specific/status/status.css">
     <link rel="shortcut icon" href="/res/contents/img/icon/favicon.ico" type="image/x-icon">
     <script src="/res/javascript/global/index.js"></script>
     <title>gameandmore.eu - Status</title>
-<style>
- .funktioniert{
-    background-color: rgb(3, 65, 3);
-}
- .kleinerausfall{
-    background-color: rgb(175, 175, 43);
- }
- .kompletterausfall{
-    background-color: rgb(84, 3, 3);
- }
-</style>
 </head>
 <body>
     <header>
         <h1>gameandmore.eu - Status</h1>
     </header>
     <main>
-        
         <section>
             <h2>gameandmore.eu - Status-Seite</h2>
             <p>Das hier ist die Statusseite für das gameandmore.eu Netzwerk.</p>
             <p>Hier wird der Status der Webserver abgefragt und dokumentiert.</p>
             <p>Du wolltest nicht hierher? Hier geht es zurück zur <a class="extLink" href="/index.html">Homepage</a>.</p>
         </section>
-        
-        <section class="kleinerausfall">
+        <section class="small_problem">
             <h2>Manche Services laufen wegen Wartungsarbeiten nicht</h2>
         </section>
-
         <section>
             <h2>Server: www.gameandmore.eu</h2>
             <p>Status: Erreichbar</p>
-            <p class="funktioniert">Service funktioniert einwandfrei</p>
+            <p class="working">Service funktioniert einwandfrei</p>
         </section>
         <section>
             <h2>Server: forum.gameandmore.eu</h2>
             <p>Status: Nicht erreichbar</p>
-            <p class="kompletterausfall">Das Forum ist noch nicht fertig entwickelt</p>
+            <p class="fatal_problem">Das Forum ist noch nicht fertig entwickelt</p>
         </section>
         <section>
             <h2>Server: backup.gameandmore.eu</h2>
             <p>Status: Nicht erreichbar</p>
-            <p class="kleinerausfall">Aktuell läuft alles noch über den hauptserver</p>
+            <p class="small_problem">Aktuell läuft alles noch über den hauptserver</p>
         </section>
     </main>
 </body>

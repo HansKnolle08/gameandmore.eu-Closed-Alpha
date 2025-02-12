@@ -1,3 +1,5 @@
+// /res/javascript/specific/dictionary/dictionary.js
+
 function searchTerm() {
     const searchValue = document.getElementById('searchField').value.toLowerCase();
     const sections = document.querySelectorAll('section');

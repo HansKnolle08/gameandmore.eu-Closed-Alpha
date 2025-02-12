@@ -1,3 +1,5 @@
+// /res/javascript/specific/dictionary/search-field.js
+
 document.addEventListener("DOMContentLoaded", () => {
     const searchField = document.getElementById("searchField");
     const placeholders = [
