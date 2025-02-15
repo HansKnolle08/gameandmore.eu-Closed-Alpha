@@ -1,7 +1,7 @@
 [ProjectName]: [www.gameandmore.eu]
 [Description]: [Willkommen bei gameandmore.eu! Hier findest du eine Sammlung von Tutorials zu allem was mit Homebrew zu tun hat. Egal ob Nintendo oder Playstation, hier findest du alles! Außerdem gibt es hier noch einige andere interessante Dinge.]
-[Version]: [1.0.21.3]
-[Release]: [12.02.2025]
+[Version]: [1.0.21.4]
+[Release]: [15.02.2025]
 [Autor]: {HansKnolle08, Superplayer2417}
 [License]: [MIT]
 [ServerPlatform]: [Ubuntu 22.04.5 LTS x86_64]
