@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="/res/css/global/extLink.css">
     <link rel="shortcut icon" href="/res/contents/img/icon/favicon.ico" type="image/x-icon">
     <script src="/res/javascript/global/index.js"></script>
+    <script src="/res/javascript/specific/dictionary/dictionary.js"></script>
+    <script src="/res/javascript/specific/dictionary/search-field.js"></script>
     <title>gameandmore.eu - Sonstige</title>
 </head>
 <body>
@@ -37,10 +39,12 @@
             <p>Viel Spaß :D</p>
         </section>
         <section>
-            <h2>Zusammenfassung</h2>
-            <p>Insgesamt kann man sagen das jede Nintendo Konsole ab der Wii eine absolute Perle ist.</p>
-            <p>Jede Konsole (außer jetzt Switch v2, OLED und Lite) sind auch super einfach zu hacken.</p>
-            <p>Es ist wirklich unglaublich welches Potential Nintendo Konsolen haben.</p>
+            <h3>Suchbegriff eingeben:</h3>
+            <input type="text" id="searchField" placeholder="🔍 Suchbegriff eingeben..." class="search-input">
+            <button onclick="searchTerm()" class="search-button">🔍 Suchen</button>
+        </section>     
+        <section id="test1">
+            <h1>Hi</h1>
         </section>
     </main>
     <footer>
