@@ -66,28 +66,3 @@ footer {
     margin-top: 20px;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
 }
-
-footer ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-footer ul li {
-    display: inline;
-}
-footer ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background 0.3s;
-}
-footer ul li a:hover {
-    background-color: #333333;
-}
-footer ul li a.active {
-    background-color: #444;
-    font-weight: bold;
-}
