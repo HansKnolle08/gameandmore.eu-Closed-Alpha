@@ -1,10 +1,9 @@
+/* /res/css/specific/etc/etc.css */
+
 .etcweiterleitung{
     color: rgb(175, 175, 43);
     text-decoration: none;
-
 }
-
 .etcweiterleitung:hover{
     text-decoration: underline;
-
 }
