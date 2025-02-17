@@ -1,0 +1,10 @@
+h1 {
+    color: red;
+    text-decoration: underline;
+}
+
+section {
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
