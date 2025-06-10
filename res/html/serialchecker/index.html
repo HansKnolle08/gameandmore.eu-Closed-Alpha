@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Switch CFW Check</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <button id="toggle-dark" class="tooltip">
+    🌓
+    <span class="tooltiptext">Dark/Light Mode umschalten</span>
+  </button>
+  <h1>Switch Serial Check</h1>
+  <p>Gib deine Seriennummer ein:</p>
+  <div class="input-container">
+    <input type="text" id="serial" placeholder="z. B. XAW10074000000" maxlength="14">
+  </div>
+  <div id="result"></div>
+  <div id="explanation"></div>
+  
+  <!-- New sections for additional information -->
+  <div id="model-info" class="info-section">
+    <div id="model-image" class="model-image"></div>
+    <div id="model-details" class="model-details"></div>
+  </div>
+  
+  <div id="guide-info" class="info-section">
+    <h3>Hilfreiche Guides</h3>
+    <div id="guide-links"></div>
+  </div>
+
+  <footer id="footer">
+    &copy; <span id="year"></span> <a href="https://youtube.com/@NiklasCFW">NiklasCFW</a>. Alle Rechte vorbehalten.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
