@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="/res/css/global/extLink.css">
     <link rel="shortcut icon" href="/res/contents/img/icon/favicon.ico" type="image/x-icon">
     <script src="/res/javascript/global/index.js"></script>
+    <script src="/res/javascript/specific/dictionary/dictionary.js"></script>
+    <script src="/res/javascript/specific/dictionary/search-field.js"></script>
     <title>gameandmore.eu - Nintendo Tutorials</title>
 </head>
 <body>
@@ -29,6 +31,11 @@
         </nav>
     </header>
     <main>
+        <section>
+            <h3>Suchbegriff eingeben:</h3>
+            <input type="text" id="searchField" placeholder="🔍 Suchbegriff eingeben..." class="search-input">
+            <button onclick="searchTerm()" class="search-button">🔍 Suchen</button>
+        </section> 
         <section>
             <h2>Nintendo Homebrew</h2>
             <p>Nintendo Homebrew bietet eine Vielzahl an Möglichkeiten, um das Beste aus Nintendo-Konsolen herauszuholen.</p>
