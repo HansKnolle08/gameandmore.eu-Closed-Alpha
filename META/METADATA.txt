@@ -1,6 +1,6 @@
 [ProjectName]: [www.gameandmore.eu]
 [Description]: [Willkommen bei gameandmore.eu! Hier findest du eine Sammlung von Tutorials zu allem was mit Homebrew zu tun hat. Egal ob Nintendo oder Playstation, hier findest du alles! Außerdem gibt es hier noch einige andere interessante Dinge.]
-[Version]: [1.1.5-alpha]
+[Version]: [1.1.6-alpha]
 [Release]: [10.06.2025]
 [Autor]: {HansKnolle08, Superplayer2417}
 [License]: [MIT]
