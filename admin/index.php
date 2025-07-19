@@ -1,31 +1,31 @@
 <?php
-session_start();
-ob_start();
-
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 $logFile = '/var/log/apache2/access.log';
 
-
-if (!file_exists($logFile)) {
-    echo "Error: Log file not found at $logFile.";
+if (!is_readable($logFile)) {
+    echo "Error: Cannot read log file at $logFile.";
     exit;
 }
 
-$lines = file($logFile);
+$handle = fopen($logFile, 'r');
 $uniqueIps = [];
 
-foreach ($lines as $line) {
-    preg_match('/^(\S+)/', $line, $matches);
-    if (isset($matches[1])) {
-        $uniqueIps[$matches[1]] = true;
+if ($handle) {
+    while (($line = fgets($handle)) !== false) {
+        preg_match('/^(\d{1,3}(?:\.\d{1,3}){3})/', $line, $matches);
+        if (isset($matches[1])) {
+            $uniqueIps[$matches[1]] = true;
+        }
     }
+    fclose($handle);
 }
 
-
 $totalUniqueVisitors = count($uniqueIps);
-
-
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
