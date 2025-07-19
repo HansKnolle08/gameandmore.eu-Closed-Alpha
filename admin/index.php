@@ -1,30 +1,36 @@
 <?php
 ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 $logFile = '/var/log/apache2/access.log';
 
 if (!is_readable($logFile)) {
-    echo "Error: Cannot read log file at $logFile.";
-    exit;
+    die("Error: Cannot read $logFile.");
 }
 
 $handle = fopen($logFile, 'r');
 $uniqueIps = [];
+$linesRead = 0;
+$matchedIps = 0;
 
 if ($handle) {
     while (($line = fgets($handle)) !== false) {
-        preg_match('/^(\d{1,3}(?:\.\d{1,3}){3})/', $line, $matches);
-        if (isset($matches[1])) {
+        $linesRead++;
+        if (preg_match('/^(\d{1,3}(?:\.\d{1,3}){3})/', $line, $matches)) {
+            $matchedIps++;
             $uniqueIps[$matches[1]] = true;
         }
     }
     fclose($handle);
 }
 
-$totalUniqueVisitors = count($uniqueIps);
+echo "<pre>";
+echo "Lines read: $linesRead\n";
+echo "IPs matched: $matchedIps\n";
+echo "Unique IPs: " . count($uniqueIps) . "\n";
+echo "</pre>";
 ?>
+
 
 <!DOCTYPE html>
 <html>
